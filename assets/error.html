@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+      <!-- Favicons -->
+  <link href="/assets/img/doohwanicon.png" rel="icon">
+  <link href="assets/img/doohwanicon" rel="apple-touch-icon">
+  <meta charset="UTF-8">
+ <title>DooHwan | 404</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 구글폰트 & 부트스트랩 -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:400,700&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(120deg, #53a9ff 60%, #fff 100%);
+      min-height: 100vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      font-family: 'Open Sans', 'Montserrat', Arial, sans-serif;
+      color: #183468;
+      align-items: center;
+      justify-content: center;
+    }
+    .center-box {
+      background: #fff;
+      box-shadow: 0 8px 40px rgba(20,40,120,0.13);
+      border-radius: 2rem;
+      padding: 3rem 2rem 2.5rem 2rem;
+      max-width: 380px;
+      width: 96vw;
+      text-align: center;
+      margin-top: 48px;
+    }
+    .error-img {
+  max-width: 140px;
+  max-height: 140px;
+  width: auto;
+  height: auto;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 14px 0 rgba(80,120,255,0.13);
+  object-fit: cover;
+  background: #f3f5fc;
+  animation: float 2.3s infinite ease-in-out;
+}
+
+    @keyframes float {
+      0%,100% { transform: translateY(0);}
+      50% { transform: translateY(-12px);}
+    }
+    .title-404 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      color: #2569d3;
+      letter-spacing: 2px;
+      margin-bottom: 0.7rem;
+    }
+    .desc {
+      font-size: 1.16rem;
+      color: #404a74;
+      margin-bottom: 2rem;
+      font-weight: 500;
+    }
+    .btn-home {
+      display: inline-block;
+      background: #53a9ff;
+      color: #fff;
+      font-weight: 700;
+      border: none;
+      border-radius: 2rem;
+      padding: 0.78rem 2.2rem;
+      font-size: 1.1rem;
+      letter-spacing: 0.5px;
+      box-shadow: 0 2px 16px 0 rgba(50,80,180,0.10);
+      transition: background 0.18s, transform 0.2s;
+      text-decoration: none;
+    }
+    .btn-home:hover {
+      background: #2569d3;
+      color: #fff;
+      transform: translateY(-2px) scale(1.05);
+      text-decoration: none;
+    }
+    .footer-404 {
+      margin-top: 4.5rem;
+      color: #7781a5;
+      font-size: 1.04rem;
+      text-align: center;
+      opacity: 0.75;
+    }
+    @media (max-width: 600px) {
+      .center-box { padding: 2rem 0.5rem 2rem 0.5rem; }
+      .title-404 { font-size: 2.1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="center-box">
+   
+    <img src="/assets/img/singsinglogo.png" alt="404" class="error-img" loading="lazy">
+    <div class="title-404">404</div>
+    <div class="desc">
+  서버 점검/장애로 서비스가 일시 중단되었습니다.<br>
+  프로젝트 소스 코드는 <a href="https://github.com/wogurwogur/fruitshop" target="_blank" style="color:#2569d3;text-decoration:underline;">Github 저장소</a>에서 확인하실 수 있습니다.<br>
+  빠른 시일 내에 복구하겠습니다.
+</div>
+    <a href="javascript:window.history.go(-1);" class="btn-home">메인으로 돌아가기</a>
+    <!-- <a href="https://yeooneeee.github.io/Web-Portfolio.github.io/" class="btn-home">메인으로 돌아가기</a> -->
+  </div>
+  <div class="footer-404">
+    &copy; DooHwan Portfolio<br>
+  </div>
+</body>
+</html>
